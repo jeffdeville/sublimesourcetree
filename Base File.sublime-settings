@@ -1,0 +1,7 @@
+/*
+    SublimeSourceTree default settings
+*/
+{
+    // stree executable path
+    "stree_path": "/usr/local/bin/stree"
+}

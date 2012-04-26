@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "SourceTree: Open SourceTree",
+        "command": "sourcetree_open"
+    }
+]
