@@ -8,9 +8,7 @@ class SourcetreeOpenCommand(sublime_plugin.WindowCommand):
         return True
 
     def get_path(self):
-        if self.window.active_view():
-            return self.window.active_view().file_name()
-        elif self.window.folders():
+        if self.window.folders():
             return self.window.folders()[0]
         else:
             sublime.status_message(__name__ + ': No place to open Source Tree to')
@@ -24,7 +22,7 @@ class SourcetreeOpenCommand(sublime_plugin.WindowCommand):
             return False
         if os.path.isfile(path):
             path = os.path.dirname(path)
-    
+
         settings = sublime.load_settings('Base File.sublime-settings')
         stree_path = settings.get('stree_path', '/usr/local/bin/stree')
 
